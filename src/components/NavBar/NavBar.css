@@ -1,0 +1,41 @@
+body{
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b2430;
+    padding: 20px 80px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.06);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li .a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+#navbar li .a:hover{
+    color: #17cf97;
+}
+#navbar li .a:hover::after{
+    content: "";
+    width: 30%;
+    height: 20%;
+    background-color:#17cf97 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
