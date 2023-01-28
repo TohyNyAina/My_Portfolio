@@ -1,0 +1,21 @@
+import React from "react";
+import { useTypewriter } from 'react-simple-typewriter';
+/* import Button from 'react-bootstrap/Button'; */
+import "./home.css";
+
+export const Home = () => {
+    const [text] = useTypewriter({
+      words: [' RANARISON Tolotra', ' Frontend Developer', ' Backend Developer'],
+      loop: 0
+    })
+  return (
+    <div>
+    <div className="text">
+      
+    <div className="ok"><h4>Hello World,</h4></div>
+      <div className="ok"><h4>I'm -</h4><h4>{text}</h4></div>
+    </div> {/* 
+    <Button>Telecharger</Button>  */}
+    </div>
+  );
+}
